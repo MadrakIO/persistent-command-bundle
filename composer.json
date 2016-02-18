@@ -1,0 +1,26 @@
+{
+    "name": "madrakio/persistent-command-bundle",
+    "description": "Persistent Command Bundle: Adds command tracking and node management to Symfony.",
+    "keywords": ["console", "command", "management", "symfony"],
+    "homepage": "https://github.com/madrakio/persistent-command-bundle",
+    "authors": [
+        {
+            "name": "John Madrak",
+            "homepage": "http://madrak.net",
+            "role": "Developer"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.9",
+        "symfony/symfony": ">=2.8.0"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "~2.8"
+    },
+    "autoload": {                                                                                                                                                                                                                         
+        "psr-4": {                                                                                                                                                                                                                        
+            "MadrakIO\\PersistentCommandBundle\\": ""
+        }
+    }
+}
