@@ -12,7 +12,7 @@ ConsoleNode
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use MadrakIO\PersistentCommandBundle\Entity\ConsoleNode AS BaseConsoleNode;
+use MadrakIO\PersistentCommandBundle\Entity\ConsoleNode as BaseConsoleNode;
 use MadrakIO\PersistentCommandBundle\Entity\ConsoleNodeInterface;
 
 /**
@@ -41,7 +41,7 @@ ConsoleNodeProcess
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use MadrakIO\PersistentCommandBundle\Entity\ConsoleNodeProcess AS BaseConsoleNodeProcess;
+use MadrakIO\PersistentCommandBundle\Entity\ConsoleNodeProcess as BaseConsoleNodeProcess;
 use MadrakIO\PersistentCommandBundle\Entity\ConsoleNodeProcessInterface;
 
 /**
@@ -59,7 +59,7 @@ class ConsoleNodeProcess extends BaseConsoleNodeProcess implements ConsoleNodePr
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
-    protected $id;    
+    protected $id;
 }
 ```
 
