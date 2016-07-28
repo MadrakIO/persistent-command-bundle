@@ -70,7 +70,7 @@ abstract class AbstractContinuousPersistentCommand extends AbstractPersistentCom
 
         switch ($input->getArgument('instruction')) {
             case 'start':
-                $this->createConsoleNodeProcess();
+                $this->begin();
 
                 do {
                     $this->runProcess();
