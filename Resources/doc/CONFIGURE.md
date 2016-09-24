@@ -23,14 +23,6 @@ use MadrakIO\PersistentCommandBundle\Entity\ConsoleNodeInterface;
  */
 class ConsoleNode extends BaseConsoleNode implements ConsoleNodeInterface
 {
-     /**
-     * @var integer
-     *
-     * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
-     */
-    protected $id;
 }
 ```
 
@@ -52,14 +44,6 @@ use MadrakIO\PersistentCommandBundle\Entity\ConsoleNodeProcessInterface;
  */
 class ConsoleNodeProcess extends BaseConsoleNodeProcess implements ConsoleNodeProcessInterface
 {
-     /**
-     * @var integer
-     *
-     * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
-     */
-    protected $id;
 }
 ```
 

@@ -8,8 +8,17 @@ use Doctrine\Common\Collections\ArrayCollection;
 /**
  * ConsoleNode.
  */
-abstract class ConsoleNode implements ConsoleNodeInterface
+abstract class AbstractConsoleNode implements ConsoleNodeInterface
 {
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+   protected $id;
+
     /**
      * @var Doctrine\Common\Collections\ArrayCollection
      *
