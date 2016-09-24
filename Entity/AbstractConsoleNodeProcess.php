@@ -8,8 +8,17 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * ConsoleNodeProcess.
  */
-abstract class ConsoleNodeProcess implements ConsoleNodeProcessInterface
+abstract class AbstractConsoleNodeProcess implements ConsoleNodeProcessInterface
 {
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+   protected $id;
+
     /**
      * @var string
      *
