@@ -12,7 +12,7 @@ ConsoleNode
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use MadrakIO\PersistentCommandBundle\Entity\ConsoleNode as BaseConsoleNode;
+use MadrakIO\PersistentCommandBundle\Entity\AbstractConsoleNode;
 use MadrakIO\PersistentCommandBundle\Entity\ConsoleNodeInterface;
 
 /**
@@ -21,7 +21,7 @@ use MadrakIO\PersistentCommandBundle\Entity\ConsoleNodeInterface;
  * @ORM\Entity
  * @ORM\Table(name="console_node")
  */
-class ConsoleNode extends BaseConsoleNode implements ConsoleNodeInterface
+class ConsoleNode extends AbstractConsoleNode implements ConsoleNodeInterface
 {
 }
 ```
@@ -33,7 +33,7 @@ ConsoleNodeProcess
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use MadrakIO\PersistentCommandBundle\Entity\ConsoleNodeProcess as BaseConsoleNodeProcess;
+use MadrakIO\PersistentCommandBundle\Entity\AbstractConsoleNodeProcess;
 use MadrakIO\PersistentCommandBundle\Entity\ConsoleNodeProcessInterface;
 
 /**
@@ -42,7 +42,7 @@ use MadrakIO\PersistentCommandBundle\Entity\ConsoleNodeProcessInterface;
  * @ORM\Entity
  * @ORM\Table(name="console_node_process")
  */
-class ConsoleNodeProcess extends BaseConsoleNodeProcess implements ConsoleNodeProcessInterface
+class ConsoleNodeProcess extends AbstractConsoleNodeProcess implements ConsoleNodeProcessInterface
 {
 }
 ```
