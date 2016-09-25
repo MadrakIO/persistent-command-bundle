@@ -168,7 +168,7 @@ abstract class AbstractConsoleNodeProcess implements ConsoleNodeProcessInterface
     /**
      * {@inheritdoc}
      */
-    public function setConsoleNode(ConsoleNode $consoleNode)
+    public function setConsoleNode(ConsoleNodeInterface $consoleNode)
     {
         $this->consoleNode = $consoleNode;
 
