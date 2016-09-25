@@ -100,7 +100,7 @@ interface ConsoleNodeProcessInterface
      *
      * @return ConsoleNodeProcess
      */
-    public function setConsoleNode(ConsoleNode $consoleNode);
+    public function setConsoleNode(ConsoleNodeInterface $consoleNode);
 
     /**
      * Get consoleNode.
